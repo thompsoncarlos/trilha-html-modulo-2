@@ -5,13 +5,24 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(124,91,35);
 }
+
+h1 {
+    text-align: center;
+}
+/* 
+h1, h2, h3, h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(124,91,35);
+} */
 
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .main {
     display: flex;
@@ -20,19 +31,140 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(245,249,234);
     padding: 10px 20px 0px;
 }
+
+.menu li {
+    list-style: none;
+    padding: 5px 0;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(124,91,35);
+}
+
+.menu ul li a:hover {
+    /* background-color: rgb(124,91,35); */
+    color: rgb(194,225,132);
+}
+
 .header {
-    background-color: rgb(5, 108, 108);
+    /* background-color: rgb(213, 243, 237); */
     min-height: 150px;
+}
+
+.header img {
+    width: 100%;
+    height: 130px;
+    opacity: .4;
+}
+
+.header p {
+    height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 20px;
+    background-color: rgba(124,91,35);
+    color: rgb(255,255,255);
 }
 .content {
-    background-color: white;
-    min-height: 300px;
+    background-color: rgb(255,255,255);
+    min-height: 350px;
     padding: 20px;
 }
+
+.content h1 {
+    text-transform: uppercase;
+}
+
+/* inicio site - style */
+#welcome {
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(194,225,132, 0.2);
+}
+
+#welcome span {
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* horario site - style*/
+table {
+    margin-top: 40px;
+}
+
+table thead {
+    background-color: rgb(194,225,132);
+    color: rgb(124,91,35);
+}
+
+table thead th{
+    background-color: rgb(194,225,132);
+    color: rgb(124,91,35);
+    padding: 8px;
+}
+
+table tbody {
+    border: solid 5px rgb(124,91,35);
+}
+
+table tbody tr:hover {
+    background-color: rgb(245,249,234);
+}
+
+table tbody th {
+    background-color: rgb(245,249,234);
+    color: rgb(124,91,35);
+    border: solid .5px rgb(124,91,35);
+}
+
+table tr td{
+    color: rgb(124,91,35);
+    padding: 8px;
+    border: solid .5px rgb(124,91,35);
+}
+
+/* contato site - style */
+.agendamento {
+    width: 60%;
+    background-color: rgb(245,249,234);
+}
+
+form {
+    width: 90%;
+    padding: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    margin:8px 0;
+    padding: 10px 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid rgb(124,91,35);
+    border-radius: 4px;
+}
+
+input[type=submit], input[type=reset] {
+    width: 20%;
+}
+
+.localizacao {
+    display: flex;
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    background-color: rgb(194,225,132);
+    min-height: 100px;
+    padding: 0 20px;
+}
+
+.footer h3, p, span {
+    margin: 10px 0;
 }
