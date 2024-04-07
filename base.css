@@ -12,11 +12,6 @@ body {
 h1 {
     text-align: center;
 }
-/* 
-h1, h2, h3, h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(124,91,35);
-} */
 
 .wrapper {
     width: 1200px;
